@@ -1,0 +1,329 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "HarmonyX/2.10.2": {
+        "type": "package",
+        "dependencies": {
+          "MonoMod.RuntimeDetour": "22.3.23.4"
+        },
+        "compile": {
+          "lib/net45/0Harmony.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Mono.Cecil/0.11.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/net40/Mono.Cecil.Pdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/net40/Mono.Cecil.Rocks.dll": {
+            "related": ".pdb"
+          },
+          "lib/net40/Mono.Cecil.dll": {
+            "related": ".Mdb.pdb;.pdb;.Pdb.pdb;.Rocks.pdb"
+          }
+        },
+        "runtime": {
+          "lib/net40/_._": {
+            "related": ".Mdb.pdb;.pdb;.Pdb.pdb;.Rocks.pdb"
+          }
+        }
+      },
+      "MonoMod.RuntimeDetour/22.3.23.4": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.11.4",
+          "MonoMod.Utils": "22.3.23.4"
+        },
+        "compile": {
+          "lib/net452/MonoMod.RuntimeDetour.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MonoMod.Utils/22.3.23.4": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.11.4"
+        },
+        "compile": {
+          "lib/net452/MonoMod.Utils.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Samboy063.Tomlet/5.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Tomlet.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Tomlet.dll": {}
+        }
+      },
+      "UniverseLib.Mono/1.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/UniverseLib.Mono.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/UniverseLib.Mono.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HarmonyX/2.10.2": {
+      "sha512": "/5WwkxXX8mPsRuigQt957rJGx1f0dDQxk+bvk4yYITKFjXas9Em+O71zEP8X0ym8OFQQ2XH/2SxS4NC7vEC+Xg==",
+      "type": "package",
+      "path": "harmonyx/2.10.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "harmonyx.2.10.2.nupkg.sha512",
+        "harmonyx.nuspec",
+        "lib/net35/0Harmony.dll",
+        "lib/net35/0Harmony.xml",
+        "lib/net45/0Harmony.dll",
+        "lib/net45/0Harmony.xml",
+        "lib/netstandard2.0/0Harmony.dll",
+        "lib/netstandard2.0/0Harmony.xml",
+        "logo_mini.png"
+      ]
+    },
+    "Mono.Cecil/0.11.4": {
+      "sha512": "IC1h5g0NeJGHIUgzM1P82ld57knhP0IcQfrYITDPXlNpMYGUrsG5TxuaWTjaeqDNQMBDNZkB8L0rBnwsY6JHuQ==",
+      "type": "package",
+      "path": "mono.cecil/0.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Mdb.pdb",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.pdb",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.Rocks.pdb",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.pdb",
+        "lib/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "lib/netstandard2.0/Mono.Cecil.Mdb.pdb",
+        "lib/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "lib/netstandard2.0/Mono.Cecil.Pdb.pdb",
+        "lib/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "lib/netstandard2.0/Mono.Cecil.Rocks.pdb",
+        "lib/netstandard2.0/Mono.Cecil.dll",
+        "lib/netstandard2.0/Mono.Cecil.pdb",
+        "mono.cecil.0.11.4.nupkg.sha512",
+        "mono.cecil.nuspec"
+      ]
+    },
+    "MonoMod.RuntimeDetour/22.3.23.4": {
+      "sha512": "2nwwFfwYDSgUzhi+1MutTg1gyUgXoMS4+E04vHOFp84Vxs0oBkkn4mGAfhkr272y0j3vqIBzo2aT9pXRlCd/ZA==",
+      "type": "package",
+      "path": "monomod.runtimedetour/22.3.23.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/MonoMod.RuntimeDetour.dll",
+        "lib/net35/MonoMod.RuntimeDetour.xml",
+        "lib/net452/MonoMod.RuntimeDetour.dll",
+        "lib/net452/MonoMod.RuntimeDetour.xml",
+        "lib/net5.0/MonoMod.RuntimeDetour.dll",
+        "lib/net5.0/MonoMod.RuntimeDetour.xml",
+        "lib/netstandard2.0/MonoMod.RuntimeDetour.dll",
+        "lib/netstandard2.0/MonoMod.RuntimeDetour.xml",
+        "monomod.runtimedetour.22.3.23.4.nupkg.sha512",
+        "monomod.runtimedetour.nuspec"
+      ]
+    },
+    "MonoMod.Utils/22.3.23.4": {
+      "sha512": "xso1rHFfcsPy3X1kj2uDk115z9tLTMxPEnba/zdNB6WazvrLRWGPuV9d4hHwr1iVz5quTFlZCbLBlE5fS2TqLA==",
+      "type": "package",
+      "path": "monomod.utils/22.3.23.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/MonoMod.Utils.dll",
+        "lib/net35/MonoMod.Utils.xml",
+        "lib/net452/MonoMod.Utils.dll",
+        "lib/net452/MonoMod.Utils.xml",
+        "lib/net5.0/MonoMod.Utils.dll",
+        "lib/net5.0/MonoMod.Utils.xml",
+        "lib/netstandard2.0/MonoMod.Utils.dll",
+        "lib/netstandard2.0/MonoMod.Utils.xml",
+        "monomod.utils.22.3.23.4.nupkg.sha512",
+        "monomod.utils.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Samboy063.Tomlet/5.2.0": {
+      "sha512": "50dv9DiB0xi6snP16e40fkaIddnR7TPjccEQgbUKblJPShFw60WdEyzcYS6DW4IYO5zDu3k0IXTl8MVQhzX18w==",
+      "type": "package",
+      "path": "samboy063.tomlet/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Tomlet.dll",
+        "lib/net6.0/Tomlet.dll",
+        "lib/net7.0/Tomlet.dll",
+        "lib/netstandard2.0/Tomlet.dll",
+        "samboy063.tomlet.5.2.0.nupkg.sha512",
+        "samboy063.tomlet.nuspec"
+      ]
+    },
+    "UniverseLib.Mono/1.5.1": {
+      "sha512": "1Q5gQ6Zdxl3AXdi7l+kktS/E3Ch1B2+A9lmer1GO6fRJQNNRQ2TykzUEq8XSqfFvMhNPurGP0PDR9YkXKzZ0Yg==",
+      "type": "package",
+      "path": "universelib.mono/1.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/UniverseLib.Mono.dll",
+        "lib/net35/UniverseLib.Mono.xml",
+        "universelib.mono.1.5.1.nupkg.sha512",
+        "universelib.mono.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "HarmonyX >= 2.10.2",
+      "Newtonsoft.Json >= 13.0.3",
+      "Samboy063.Tomlet >= 5.2.0",
+      "UniverseLib.Mono >= 1.5.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\桌面\\内置修改\\学生时代\\ZGScriptTrainer\\ZGScriptTrainer.csproj",
+      "projectName": "ZGScriptTrainer.Mono_5",
+      "projectPath": "D:\\桌面\\内置修改\\学生时代\\ZGScriptTrainer\\ZGScriptTrainer.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\桌面\\内置修改\\学生时代\\ZGScriptTrainer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "HarmonyX": {
+            "include": "Compile",
+            "target": "Package",
+            "version": "[2.10.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "Samboy063.Tomlet": {
+            "target": "Package",
+            "version": "[5.2.0, )"
+          },
+          "UniverseLib.Mono": {
+            "target": "Package",
+            "version": "[1.5.1, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

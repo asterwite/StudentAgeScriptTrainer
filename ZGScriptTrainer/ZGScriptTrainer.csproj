@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZGScriptTrainer</RootNamespace>
+    <LangVersion>10.0</LangVersion>
+    <Configurations>Mono_5;Mono_6;IL2CPP_6;IL2CPP_6E</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Mono_5'">
+    <OutputPath>..\Release\ZGScriptTrainer.Mono_5\</OutputPath>
+    <TargetFramework>net472</TargetFramework>
+    <DefineConstants>MONO,BIE,BIE5</DefineConstants>
+    <AssemblyName>ZGScriptTrainer.Mono_5</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Mono_6'">
+    <OutputPath>..\Release\ZGScriptTrainer.Mono_6\</OutputPath>
+    <TargetFramework>net472</TargetFramework>
+    <DefineConstants>MONO,BIE,BIE6</DefineConstants>
+    <AssemblyName>ZGScriptTrainer.Mono_6</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='IL2CPP_6'">
+    <OutputPath>..\Release\ZGScriptTrainer.IL2CPP_6\</OutputPath>
+    <TargetFramework>net472</TargetFramework>
+    <DefineConstants>CPP,BIE,BIE6,UNHOLLOWER</DefineConstants>
+    <AssemblyName>ZGScriptTrainer.IL2CPP_6</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='IL2CPP_6E'">
+    <OutputPath>..\Release\ZGScriptTrainer.IL2CPP_6E\</OutputPath>
+    <TargetFramework>net6</TargetFramework>
+    <DefineConstants>CPP,BIE,BIE6,INTEROP</DefineConstants>
+    <AssemblyName>ZGScriptTrainer.IL2CPP_6E</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="CheatForTheFriend\**" />
+    <EmbeddedResource Remove="CheatForTheFriend\**" />
+    <None Remove="CheatForTheFriend\**" />
+  </ItemGroup>
+  <!-- ~~~~~ NUGET ~~~~~ -->
+  <ItemGroup>
+      <PackageReference Include="HarmonyX" Version="2.10.2" IncludeAssets="compile" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Samboy063.Tomlet" Version="5.2.0" />
+  </ItemGroup>
+  <!-- il2cpp nuget -->
+  <ItemGroup Condition="'$(Configuration)'=='IL2CPP_6E'">
+      <Reference Include="UniverseLib.IL2CPP.Interop">
+          <HintPath>D:\WorkPlace\UniverseLib-main\Release\UniverseLib.Il2Cpp.Interop\UniverseLib.IL2CPP.Interop.dll</HintPath>
+          <Private>True</Private>
+      </Reference>
+      <Reference Include="Il2CppInterop.Runtime">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\IL2CPP_6E\Il2CppInterop.Runtime.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='IL2CPP_6'">
+      <PackageReference Include="Il2CppAssemblyUnhollower.BaseLib" Version="0.4.22" />
+      <PackageReference Include="UniverseLib.IL2CPP.Unhollower" Version="1.5.1" />
+  </ItemGroup>
+  <!-- mono nuget -->
+  <ItemGroup Condition="'$(Configuration)'=='Mono_6' or '$(Configuration)'=='Mono_5'">
+      <PackageReference Include="UniverseLib.Mono" Version="1.5.1" />
+  </ItemGroup>
+  <!-- net6 -->
+  <ItemGroup Condition="'$(TargetFramework)'=='net6'">
+      <Reference Include="mcs">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\mcs\net6\mcs.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <!-- net472 -->
+  <!-- BepInEx 5 Mono -->
+  <!-- BepInEx 6 Mono -->
+  <ItemGroup Condition="'$(Configuration)'=='Mono_6'">
+      <Reference Include="BepInEx">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\Mono_6\BepInEx.Core.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="BepInEx.Unity">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\Mono_6\BepInEx.Unity.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <!-- BepInEx 6 Il2Cpp -->
+  <ItemGroup Condition="'$(Configuration)'=='IL2CPP_6'">
+      <Reference Include="BepInEx">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\IL2CPP_6\BepInEx.Core.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="BepInEx.IL2CPP">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\IL2CPP_6\BepInEx.IL2CPP.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <!-- BepInEx 6E Il2Cpp -->
+  <ItemGroup Condition="'$(Configuration)'=='IL2CPP_6E'">
+      <Reference Include="BepInEx">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\IL2CPP_6E\BepInEx.Core.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="BepInEx.Unity.IL2CPP">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\BepInEx\IL2CPP_6E\BepInEx.Unity.IL2CPP.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <!-- Mono -->
+  <!-- Il2Cpp Unhollower -->
+  <ItemGroup Condition="'$(Configuration)'=='IL2CPP_6'">
+      <Reference Include="Il2Cppmscorlib">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\Il2Cppmscorlib.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="Il2CppSystem.Core">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\Il2CppSystem.Core.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.CoreModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.TextRenderingModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.UI.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.UIModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.IMGUIModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+      <Reference Include="Il2CppSystem">
+        <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6\Il2CppSystem.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <!-- Il2Cpp Interop -->
+  <ItemGroup Condition="'$(Configuration)'=='IL2CPP_6E'">
+      <Reference Include="Il2Cppmscorlib">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\Il2Cppmscorlib.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="Il2CppSystem.Core">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\Il2CppSystem.Core.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.CoreModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.TextRenderingModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.UI.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.UIModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.IMGUIModule.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="Il2CppSystem">
+        <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\Il2CppSystem.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>C:\Users\97232\OneDrive\文档\GitHub\BepInExLibrary\Unity\IL2CPP_6E\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>lib\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>lib\Assembly-CSharp-nstrip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>lib\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mcs">
+      <HintPath>..\..\..\..\下载\UnityExplorer-master\lib\net35\mcs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>lib\MessagePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>lib\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>lib\System.Memory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>lib\Unity.Addressables.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>lib\Unity.InputSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>lib\Unity.ResourceManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>lib\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>lib\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>lib\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>lib\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>lib\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>lib\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>lib\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>lib\UnityEngine.UI-nstrip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>lib\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;E:\Program Files (x86)\Steam\steamapps\common\Infection Free Zone\BepInEx\Plugins\&quot; /s /i /y" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Update="System">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Core">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Data">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.IO.Compression.FileSystem">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Numerics">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="学生时代\" />
+    <Folder Include="ItemSpawn\" />
+  </ItemGroup>  
+
+</Project>

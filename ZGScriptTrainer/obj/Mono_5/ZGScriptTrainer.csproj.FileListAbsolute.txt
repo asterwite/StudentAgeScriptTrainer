@@ -1,0 +1,24 @@
+D:\桌面\ZGScriptTrainer_Infection Free Zone\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.AssemblyReference.cache
+D:\桌面\ZGScriptTrainer_Infection Free Zone\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\ZGScriptTrainer_Infection Free Zone\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.CoreCompileInputs.cache
+D:\桌面\ZGScriptTrainer_Infection Free Zone\Release\ZGScriptTrainer.Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\ZGScriptTrainer_Infection Free Zone\ZGScriptTrainer\obj\Mono_5\ZGScript.943FD636.Up2Date
+D:\桌面\ZGScriptTrainer_Infection Free Zone\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\夜袭者\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.AssemblyReference.cache
+D:\桌面\夜袭者\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\夜袭者\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.CoreCompileInputs.cache
+D:\桌面\夜袭者\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\夜袭者\Release\ZGScriptTrainer.Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\夜袭者\ZGScriptTrainer\obj\Mono_5\ZGScript.943FD636.Up2Date
+D:\桌面\学生时代\Release\ZGScriptTrainer.Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.AssemblyReference.cache
+D:\桌面\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.CoreCompileInputs.cache
+D:\桌面\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScript.943FD636.Up2Date
+D:\桌面\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\内置修改\学生时代\Release\ZGScriptTrainer.Mono_5\ZGScriptTrainer.Mono_5.dll
+D:\桌面\内置修改\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.AssemblyReference.cache
+D:\桌面\内置修改\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.GeneratedMSBuildEditorConfig.editorconfig
+D:\桌面\内置修改\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.csproj.CoreCompileInputs.cache
+D:\桌面\内置修改\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScript.943FD636.Up2Date
+D:\桌面\内置修改\学生时代\ZGScriptTrainer\obj\Mono_5\ZGScriptTrainer.Mono_5.dll

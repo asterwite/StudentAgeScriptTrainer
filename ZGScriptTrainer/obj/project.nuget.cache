@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "W6QXconLZaw=",
+  "success": true,
+  "projectFilePath": "D:\\桌面\\内置修改\\学生时代\\ZGScriptTrainer\\ZGScriptTrainer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\harmonyx\\2.10.2\\harmonyx.2.10.2.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\monomod.runtimedetour\\22.3.23.4\\monomod.runtimedetour.22.3.23.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\monomod.utils\\22.3.23.4\\monomod.utils.22.3.23.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\samboy063.tomlet\\5.2.0\\samboy063.tomlet.5.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\universelib.mono\\1.5.1\\universelib.mono.1.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

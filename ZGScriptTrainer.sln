@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZGScriptTrainer", "ZGScriptTrainer\ZGScriptTrainer.csproj", "{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		IL2CPP_6|Any CPU = IL2CPP_6|Any CPU
+		IL2CPP_6E|Any CPU = IL2CPP_6E|Any CPU
+		Mono_5|Any CPU = Mono_5|Any CPU
+		Mono_6|Any CPU = Mono_6|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.IL2CPP_6|Any CPU.ActiveCfg = IL2CPP_6|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.IL2CPP_6|Any CPU.Build.0 = IL2CPP_6|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.IL2CPP_6E|Any CPU.ActiveCfg = IL2CPP_6E|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.IL2CPP_6E|Any CPU.Build.0 = IL2CPP_6E|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.Mono_5|Any CPU.ActiveCfg = Mono_5|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.Mono_5|Any CPU.Build.0 = Mono_5|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.Mono_6|Any CPU.ActiveCfg = Mono_6|Any CPU
+		{1D031242-6DE6-454C-AE9F-3A3BD8F0BB15}.Mono_6|Any CPU.Build.0 = Mono_6|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2680E9E5-6FAA-4D9F-9F02-E8D1833D0B4F}
+	EndGlobalSection
+EndGlobal
